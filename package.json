@@ -8,7 +8,13 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@babel/preset-react": "^7.22.15",
+    "@vue/compat": "^3.3.4",
     "core-js": "^3.8.3",
+    "mirrorfly-uikit": "^4.0.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "veaury": "^2.3.12",
     "vue": "^3.2.13"
   },
   "devDependencies": {

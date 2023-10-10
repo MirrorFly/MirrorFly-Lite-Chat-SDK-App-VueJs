@@ -1,26 +1,89 @@
-<template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+ <template>
+ <div >
+   <Basic/>
+ </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import MirrorFlyUIReactComponent from './MirrorFlyUIReactComponent.jsx'
+import {applyReactInVue} from 'veaury'
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+ name: 'App',
+ components: {
+  Basic: applyReactInVue(MirrorFlyUIReactComponent),
+ }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color:#ece7e7ba;
+    font-family: 'Arial';
+}
+.login{
+        width: 382px;
+        overflow: hidden;
+        margin: auto;
+        margin: 20 0 0 450px;
+        padding: 80px;
+        /* background: #69ddc6; */
+        border-radius: 15px ;
+
+}
+h2{
+    text-align: center;
+    color: #e02727;
+    padding: 20px;
+    font-family: 'Arial';
+}
+label{
+    color: #070707;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+#Uname{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+    margin-top: 5%
+}
+#Pass{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+
+}
+.imgcontainer {
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 100%;
+  height: 50%;
+  border-radius: 0%;
+}
+#log{
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 17px;
+    padding-left: 7px;
+    color: rgb(253, 250, 250);
+    background-color: #e02727;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+a{
+    float: right;
+    background-color: grey;
 }
 </style>
